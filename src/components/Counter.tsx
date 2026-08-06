@@ -9,7 +9,10 @@ export interface CounterProps {
 
 /** Counts up when scrolled into view. Static under reduced motion. */
 export function Counter({ value }: CounterProps) {
-  const [ref, inView] = useInView(0.4);
+  // No bottom rootMargin here: the hero stats can already sit near the
+  // bottom of the viewport on first load, and the reveal margin used
+  // elsewhere would keep them permanently out of view.
+  const [ref, inView] = useInView(0.4, true, '0px');
   const m = String(value).match(/^(\D*?)(\d[\d,]*)(.*)$/);
   const target = m ? parseInt(m[2].replace(/,/g, ""), 10) : 0;
   // Reduced-motion visitors see the final figure immediately, decided at first
@@ -28,7 +31,10 @@ export function Counter({ value }: CounterProps) {
     };
     raf = requestAnimationFrame(step);
     return () => cancelAnimationFrame(raf);
-  }, [inView, target, m]);
+    // `m` is derived from `value` on every render, so its identity changes each
+    // time even when `value` hasn't — depending on it here would restart this
+    // effect (and reset t0) on every animation frame instead of once.
+  }, [inView, target]);
 
   if (!m) return <span ref={ref}>{value}</span>;
   return <span ref={ref} className="mono">{m[1]}{n.toLocaleString("en-IN")}{m[3]}</span>;

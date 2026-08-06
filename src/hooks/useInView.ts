@@ -3,13 +3,17 @@ import { useEffect, useRef, useState } from 'react';
 /**
  * Reports whether an element is on screen.
  *
- * @param threshold how much of the element must be visible
- * @param once      true latches on first sight (used for scroll reveals);
- *                  false keeps tracking (used to pause off-screen galleries)
+ * @param threshold  how much of the element must be visible
+ * @param once       true latches on first sight (used for scroll reveals);
+ *                   false keeps tracking (used to pause off-screen galleries)
+ * @param rootMargin overrides the default margin (the -8% bottom margin used
+ *                   for `once` assumes the element starts below the fold;
+ *                   pass '0px' for elements that may already be visible on load)
  */
 export function useInView<T extends HTMLElement = HTMLDivElement>(
   threshold = 0.15,
   once = true,
+  rootMargin?: string,
 ): [React.RefObject<T | null>, boolean] {
   const ref = useRef<T | null>(null);
   // Environments without IntersectionObserver treat everything as visible, so
@@ -30,11 +34,11 @@ export function useInView<T extends HTMLElement = HTMLDivElement>(
           setInView(e.isIntersecting);
         }
       },
-      { threshold, rootMargin: once ? '0px 0px -8% 0px' : '0px' },
+      { threshold, rootMargin: rootMargin ?? (once ? '0px 0px -8% 0px' : '0px') },
     );
     io.observe(el);
     return () => io.disconnect();
-  }, [threshold, once]);
+  }, [threshold, once, rootMargin]);
 
   return [ref, inView];
 }
