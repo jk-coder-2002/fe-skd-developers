@@ -1,0 +1,25 @@
+/* Design tokens and root type setup. Everything is scoped under .jd so the
+   markup can drop into any page without leaking styles.
+   Fonts are loaded with <link rel=preconnect/stylesheet> in index.html rather
+   than an @import, which avoids a render-blocking request chain. */
+
+.jd{
+  --steel:#22292F;
+  --steel-900:#161B20;
+  --concrete:#F4F1EA;
+  --orange:#E8590C;
+  --orange-d:#A63F08;
+  --yellow:#FFC107;
+  --navy:#1B3A57;
+  --ink:#1A1A1A;
+  --muted:#5C636B;
+  --muted-d:#A3ADB6;
+  --line:rgba(34,41,47,.13);
+  --line-d:rgba(244,241,234,.15);
+  --nav-h:74px;
+
+  font-family:'Inter','Noto Sans Gujarati','Noto Sans Devanagari',system-ui,sans-serif;
+  font-size:16px; color:var(--ink); background:var(--concrete);
+  -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;
+  overflow-x:hidden;
+}
