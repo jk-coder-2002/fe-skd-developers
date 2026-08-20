@@ -2,6 +2,7 @@ import { useMemo, useState } from 'react';
 import { ArrowUpRight } from 'lucide-react';
 import { ArtDefs } from '../components/art';
 import { Heading } from '../components/Heading';
+import { ProjectLightbox } from '../components/ProjectLightbox';
 import { ProjectMedia } from '../components/ProjectMedia';
 import { Reveal } from '../components/Reveal';
 import { Tilt } from '../components/Tilt';
@@ -15,6 +16,7 @@ export interface ProjectsProps {
 /** Previous work: category filter plus photo galleries / isometric illustrations. */
 export function Projects({ t }: ProjectsProps) {
   const [filter, setFilter] = useState<FilterKey>('all');
+  const [active, setActive] = useState<Project | null>(null);
   const list: Project[] = useMemo(
     () => t.work.projects.map((p, i) => ({ ...p, ...PROJECT_META[i], key: i }))
       .filter((p) => filter === "all" || p.cat === filter),
@@ -47,7 +49,10 @@ export function Projects({ t }: ProjectsProps) {
           {list.map((p, i) => (
             <Reveal key={`${filter}-${p.key}`} delay={i * 70}>
               <Tilt className="up" max={3} lift={8}>
-                <article className="proj">
+                <article className="proj" role="button" tabIndex={0}
+                  aria-label={`View ${p.n}`}
+                  onClick={() => setActive(p)}
+                  onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); setActive(p); } }}>
                   <div className="plate">
                     <ProjectMedia p={p} artLabel={t.work.art} />
                     <span className="tag">{t.work.filters[p.cat]}</span>
@@ -63,6 +68,15 @@ export function Projects({ t }: ProjectsProps) {
           ))}
         </div>
       </div>
+
+      {active && (
+        <ProjectLightbox
+          project={active}
+          artLabel={t.work.art}
+          categoryLabel={t.work.filters[active.cat]}
+          onClose={() => setActive(null)}
+        />
+      )}
     </section>
   );
 }

@@ -65,7 +65,7 @@ export const FILTER_KEYS: FilterKey[] = [
 
 export const PEOPLE_META: PersonMeta[] = [
   {
-    photo: '/images/team/vipulbhai-jada.jpg',
+    photo: '/images/team/vipulbhai_CEO.jpeg',
     initials: 'VJ',
     roleShort: 'CEO',
     wa: CONFIG.whatsapp, // TODO: swap for a direct number if he wants one
@@ -74,7 +74,7 @@ export const PEOPLE_META: PersonMeta[] = [
     // TODO: REPLACE THIS PHOTO. The supplied image is an AI-generated stock
     // portrait, not Gordhanbhai Dobariya. Shoot a real photo in the same
     // framing as the CEO shot (head and chest, 4:5) and swap it in here.
-    photo: '/images/team/gordhanbhai-dobariya.jpg',
+    photo: '/images/team/gordhanbhai_COO.png',
     initials: 'GD',
     roleShort: 'COO',
     wa: CONFIG.whatsapp,

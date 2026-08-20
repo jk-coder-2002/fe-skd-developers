@@ -52,7 +52,8 @@ export function ProjectMedia({ p, artLabel }: ProjectMediaProps) {
           <div className="gal-nav">
             {imgs.map((_, n) => (
               <button key={n} className={n === idx ? "on" : ""}
-                onClick={() => setIdx(n)} aria-label={`Show photo ${n + 1}`} />
+                onClick={(e) => { e.stopPropagation(); setIdx(n); }}
+                aria-label={`Show photo ${n + 1}`} />
             ))}
           </div>
         </>
