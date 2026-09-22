@@ -139,12 +139,16 @@ export interface ServiceMeta {
   code: string;
 }
 
+/** 'real' = actual SKD site photos. 'static' = placeholder, shown after all 'real' entries. */
+export type ProjectSource = 'real' | 'static';
+
 export interface ProjectMeta {
   cat: ProjectCat;
   /** Isometric illustration used when `photos` is null. */
   Art: FC;
   /** One entry shows a still; two or more become a crossfading gallery. */
   photos: string[] | null;
+  source: ProjectSource;
 }
 
 /** A translated project joined with its language-independent metadata. */

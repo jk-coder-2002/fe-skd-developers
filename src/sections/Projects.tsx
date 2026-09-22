@@ -19,7 +19,9 @@ export function Projects({ t }: ProjectsProps) {
   const [active, setActive] = useState<Project | null>(null);
   const list: Project[] = useMemo(
     () => t.work.projects.map((p, i) => ({ ...p, ...PROJECT_META[i], key: i }))
-      .filter((p) => filter === "all" || p.cat === filter),
+      .filter((p) => filter === "all" || p.cat === filter)
+      // real site photos first; static placeholders trail so they're easy to drop later
+      .sort((a, b) => (a.source === b.source ? 0 : a.source === 'real' ? -1 : 1)),
     [t, filter]
   );
 

@@ -76,6 +76,7 @@ export function ProjectLightbox({ project, artLabel, categoryLabel, onClose }: P
             <div className="lightbox-track" style={{ transform: `translateX(-${idx * 100}%)` }}>
               {imgs.map((src, n) => (
                 <div className="lightbox-slide" key={n}>
+                  <div className="lightbox-slide-bg" aria-hidden="true" style={{ backgroundImage: `url(${src})` }} />
                   <img src={src} loading={n === 0 ? undefined : 'lazy'}
                     alt={n === 0 ? project.n : `${project.n} (${n + 1})`} />
                 </div>

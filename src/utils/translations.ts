@@ -6,8 +6,8 @@ import type { Lang, Translations } from '../types';
  * registering its code in LANGS below; `Translations` keeps every block honest,
  * so a missing key is a compile error rather than a blank space on the page.
  *
- * services.items and work.projects must stay 6 long - they are matched to
- * SERVICE_META and PROJECT_META by array index.
+ * services.items must stay 6 long and work.projects must stay 9 long - they
+ * are matched to SERVICE_META and PROJECT_META by array index.
  */
 export const T: Translations = {
   en: {
@@ -76,6 +76,9 @@ export const T: Translations = {
         { n: "Dumas Road retail complex", d: "Ground-floor showroom shell with mezzanine and a customer parking deck.", m: "2023 · 11,500 sq.ft" },
         { n: "Cold storage, Pandesara", d: "Insulated warehouse with reinforced flooring for palletised cold-chain use.", m: "2021 · 9,200 sq.ft" },
         { n: "Heritage home, Rander", d: "Structural strengthening and interior rebuild of a 60-year-old family home.", m: "2024 · 3,400 sq.ft" },
+        { n: "British Jewels manufacturing unit", d: "A dedicated jewellery manufacturing facility, built for precision production, secure storage and a smooth workflow from raw material to finished piece.", m: "2023 · Manufacturing unit" },
+        { n: "Nobal Public School, top floor", d: "Top-floor addition on a live school campus, built around the academic calendar with minimal disruption to ongoing classes.", m: "2022 · Top-floor addition" },
+        { n: "The Fern Vishranta Resort", d: "A full-service resort — guest rooms and suites, pure-vegetarian dining, a pool and spa, plus pillarless banquet halls built to host large weddings and corporate events.", m: "2024–25 · 88+ rooms" },
       ],
     },
     contact: {
@@ -160,6 +163,9 @@ export const T: Translations = {
         { n: "ડુમસ રોડ રિટેલ કોમ્પ્લેક્સ", d: "ગ્રાઉન્ડ ફ્લોર શોરૂમ શેલ, મેઝેનાઇન અને ગ્રાહક પાર્કિંગ ડેક.", m: "૨૦૨૩ · ૧૧,૫૦૦ ચો.ફૂટ" },
         { n: "કોલ્ડ સ્ટોરેજ, પાંડેસરા", d: "ઇન્સ્યુલેટેડ ગોડાઉન, પેલેટ વપરાશ માટે મજબૂત ફ્લોરિંગ સાથે.", m: "૨૦૨૧ · ૯,૨૦૦ ચો.ફૂટ" },
         { n: "જૂનું ઘર નવીનીકરણ, રાંદેર", d: "૬૦ વર્ષ જૂના પરિવારના ઘરનું સ્ટ્રક્ચરલ મજબૂતીકરણ અને ઇન્ટિરિયર પુનર્નિર્માણ.", m: "૨૦૨૪ · ૩,૪૦૦ ચો.ફૂટ" },
+        { n: "બ્રિટિશ જ્વેલ્સ મેન્યુફેક્ચરિંગ યુનિટ", d: "ઝવેરાત ઉત્પાદન માટેનું ડેડિકેટેડ યુનિટ — ચોકસાઇભર્યા ઉત્પાદન, સુરક્ષિત સંગ્રહ અને કાચા માલથી તૈયાર ઘરેણાં સુધીના સરળ વર્કફ્લો માટે બનાવેલું.", m: "૨૦૨૩ · મેન્યુફેક્ચરિંગ યુનિટ" },
+        { n: "નોબલ પબ્લિક સ્કૂલ, ટોપ ફ્લોર", d: "ચાલુ સ્કૂલ કેમ્પસ પર ટોપ ફ્લોરનું બાંધકામ — શૈક્ષણિક કેલેન્ડરને ધ્યાનમાં રાખી, ચાલુ વર્ગોમાં ઓછામાં ઓછો વિક્ષેપ પાડીને પૂર્ણ કરાયું.", m: "૨૦૨૨ · ટોપ ફ્લોર બાંધકામ" },
+        { n: "ધ ફર્ન વિશ્રાંતા રિસોર્ટ", d: "સંપૂર્ણ સુવિધાયુક્ત રિસોર્ટ — રૂમ અને સ્યુટ, શુદ્ધ શાકાહારી ડાઇનિંગ, પૂલ અને સ્પા, તથા મોટા લગ્ન અને કોર્પોરેટ ઇવેન્ટ્સ માટે પિલરલેસ બેન્ક્વેટ હોલ.", m: "૨૦૨૪–૨૫ · ૮૮+ રૂમ" },
       ],
     },
     contact: {
@@ -244,6 +250,9 @@ export const T: Translations = {
         { n: "डुमस रोड रिटेल कॉम्प्लेक्स", d: "ग्राउंड फ्लोर शोरूम शेल, मेज़ेनाइन और ग्राहक पार्किंग डेक.", m: "2023 · 11,500 वर्ग फुट" },
         { n: "कोल्ड स्टोरेज, पांडेसरा", d: "इंसुलेटेड गोदाम, पैलेट उपयोग के लिए मज़बूत फ़्लोरिंग के साथ.", m: "2021 · 9,200 वर्ग फुट" },
         { n: "पुराना घर नवीनीकरण, रांदेर", d: "60 साल पुराने पारिवारिक घर का स्ट्रक्चरल मज़बूतीकरण और इंटीरियर पुनर्निर्माण.", m: "2024 · 3,400 वर्ग फुट" },
+        { n: "ब्रिटिश ज्वेल्स मैन्युफैक्चरिंग यूनिट", d: "ज्वेलरी निर्माण के लिए समर्पित यूनिट — सटीक उत्पादन, सुरक्षित भंडारण और कच्चे माल से तैयार आभूषण तक सहज वर्कफ़्लो के लिए बनाई गई.", m: "2023 · मैन्युफैक्चरिंग यूनिट" },
+        { n: "नोबल पब्लिक स्कूल, टॉप फ्लोर", d: "चालू स्कूल कैंपस पर टॉप फ्लोर का निर्माण — शैक्षणिक कैलेंडर को ध्यान में रखते हुए, चल रही कक्षाओं में न्यूनतम व्यवधान के साथ पूरा किया गया.", m: "2022 · टॉप फ्लोर निर्माण" },
+        { n: "द फर्न विश्रांता रिज़ॉर्ट", d: "पूर्ण-सुविधायुक्त रिज़ॉर्ट — कमरे और सुइट, शुद्ध शाकाहारी डाइनिंग, पूल और स्पा, तथा बड़ी शादियों और कॉर्पोरेट इवेंट्स के लिए पिलरलेस बैंक्वेट हॉल.", m: "2024–25 · 88+ कमरे" },
       ],
     },
     contact: {
