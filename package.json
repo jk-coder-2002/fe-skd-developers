@@ -5,8 +5,8 @@
   "type": "module",
   "description": "SKD Developers - Surat, Gujarat. Phase 1 marketing site.",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc -b && vite build",
+    "dev": "node api.js && vite",
+    "build": "node api.js && tsc -b && vite build",
     "preview": "vite preview",
     "lint": "eslint .",
     "typecheck": "tsc -b --noEmit"
