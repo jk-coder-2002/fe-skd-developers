@@ -79,6 +79,10 @@ export const T: Translations = {
         { n: "British Jewels manufacturing unit", d: "A dedicated jewellery manufacturing facility, built for precision production, secure storage and a smooth workflow from raw material to finished piece.", m: "2023 · Manufacturing unit" },
         { n: "Nobal Public School, top floor", d: "Top-floor addition on a live school campus, built around the academic calendar with minimal disruption to ongoing classes.", m: "2022 · Top-floor addition" },
         { n: "The Fern Vishranta Resort", d: "A full-service resort — guest rooms and suites, pure-vegetarian dining, a pool and spa, plus pillarless banquet halls built to host large weddings and corporate events.", m: "2024–25 · 88+ rooms" },
+        { n: "SSP – Shivshakti Poly Films Pvt. Ltd.", d: "Manufacturing facility for sequin rolls, embroidery threads and jari materials, with clear-span production halls laid out for continuous machine runs and clean material flow.", m: "2024 & 2026 · Manufacturing unit" },
+        { n: "Ramkrishna Aluminium", d: "Aluminium manufacturing plant with heavy-duty flooring for machinery and coil handling, and a structure built for heat, load and round-the-clock operation.", m: "2022 · Manufacturing plant" },
+        { n: "SSP Villa", d: "A private farm house set in open greenery — spacious living areas, generous verandahs and landscaped grounds built for weekends away from the city.", m: "2020 · Farm house" },
+        { n: "Karmala Farm House", d: "A countryside farm house combining sturdy construction with open, airy living spaces and outdoor areas made for family gatherings.", m: "2016 · Farm house" },
       ],
     },
     contact: {
@@ -166,6 +170,10 @@ export const T: Translations = {
         { n: "બ્રિટિશ જ્વેલ્સ મેન્યુફેક્ચરિંગ યુનિટ", d: "ઝવેરાત ઉત્પાદન માટેનું ડેડિકેટેડ યુનિટ — ચોકસાઇભર્યા ઉત્પાદન, સુરક્ષિત સંગ્રહ અને કાચા માલથી તૈયાર ઘરેણાં સુધીના સરળ વર્કફ્લો માટે બનાવેલું.", m: "૨૦૨૩ · મેન્યુફેક્ચરિંગ યુનિટ" },
         { n: "નોબલ પબ્લિક સ્કૂલ, ટોપ ફ્લોર", d: "ચાલુ સ્કૂલ કેમ્પસ પર ટોપ ફ્લોરનું બાંધકામ — શૈક્ષણિક કેલેન્ડરને ધ્યાનમાં રાખી, ચાલુ વર્ગોમાં ઓછામાં ઓછો વિક્ષેપ પાડીને પૂર્ણ કરાયું.", m: "૨૦૨૨ · ટોપ ફ્લોર બાંધકામ" },
         { n: "ધ ફર્ન વિશ્રાંતા રિસોર્ટ", d: "સંપૂર્ણ સુવિધાયુક્ત રિસોર્ટ — રૂમ અને સ્યુટ, શુદ્ધ શાકાહારી ડાઇનિંગ, પૂલ અને સ્પા, તથા મોટા લગ્ન અને કોર્પોરેટ ઇવેન્ટ્સ માટે પિલરલેસ બેન્ક્વેટ હોલ.", m: "૨૦૨૪–૨૫ · ૮૮+ રૂમ" },
+        { n: "SSP – શિવશક્તિ પોલી ફિલ્મ્સ પ્રા. લિ.", d: "સિક્વન્સ રોલ, એમ્બ્રોઇડરી થ્રેડ અને જરી મટિરિયલ બનાવતું મેન્યુફેક્ચરિંગ યુનિટ — સતત મશીન ચલાવવા અને સરળ મટિરિયલ ફ્લો માટે ખુલ્લા પ્રોડક્શન હોલ સાથે.", m: "૨૦૨૪ અને ૨૦૨૬ · મેન્યુફેક્ચરિંગ યુનિટ" },
+        { n: "રામકૃષ્ણ એલ્યુમિનિયમ", d: "એલ્યુમિનિયમ મેન્યુફેક્ચરિંગ પ્લાન્ટ — મશીનરી અને કોઇલ હેન્ડલિંગ માટે હેવી-ડ્યુટી ફ્લોરિંગ, અને ગરમી, વજન તથા ચોવીસ કલાક કામ માટે બનાવેલું સ્ટ્રક્ચર.", m: "૨૦૨૨ · મેન્યુફેક્ચરિંગ પ્લાન્ટ" },
+        { n: "SSP વિલા", d: "હરિયાળી વચ્ચે ખાનગી ફાર્મ હાઉસ — વિશાળ લિવિંગ એરિયા, મોટા વરંડા અને શહેરથી દૂર વીકએન્ડ માટે લેન્ડસ્કેપ કરેલું મેદાન.", m: "૨૦૨૦ · ફાર્મ હાઉસ" },
+        { n: "કરમલા ફાર્મ હાઉસ", d: "ગામડાના વાતાવરણમાં ફાર્મ હાઉસ — મજબૂત બાંધકામ સાથે ખુલ્લી, હવાદાર રહેવાની જગ્યા અને પરિવારના મેળાવડા માટે આઉટડોર વિસ્તાર.", m: "૨૦૧૬ · ફાર્મ હાઉસ" },
       ],
     },
     contact: {
@@ -253,6 +261,10 @@ export const T: Translations = {
         { n: "ब्रिटिश ज्वेल्स मैन्युफैक्चरिंग यूनिट", d: "ज्वेलरी निर्माण के लिए समर्पित यूनिट — सटीक उत्पादन, सुरक्षित भंडारण और कच्चे माल से तैयार आभूषण तक सहज वर्कफ़्लो के लिए बनाई गई.", m: "2023 · मैन्युफैक्चरिंग यूनिट" },
         { n: "नोबल पब्लिक स्कूल, टॉप फ्लोर", d: "चालू स्कूल कैंपस पर टॉप फ्लोर का निर्माण — शैक्षणिक कैलेंडर को ध्यान में रखते हुए, चल रही कक्षाओं में न्यूनतम व्यवधान के साथ पूरा किया गया.", m: "2022 · टॉप फ्लोर निर्माण" },
         { n: "द फर्न विश्रांता रिज़ॉर्ट", d: "पूर्ण-सुविधायुक्त रिज़ॉर्ट — कमरे और सुइट, शुद्ध शाकाहारी डाइनिंग, पूल और स्पा, तथा बड़ी शादियों और कॉर्पोरेट इवेंट्स के लिए पिलरलेस बैंक्वेट हॉल.", m: "2024–25 · 88+ कमरे" },
+        { n: "SSP – शिवशक्ति पॉली फिल्म्स प्रा. लि.", d: "सीक्वेंस रोल, एम्ब्रॉयडरी थ्रेड और जरी मटीरियल बनाने वाली मैन्युफैक्चरिंग यूनिट — लगातार मशीन चलाने और सुगम मटीरियल फ्लो के लिए खुले प्रोडक्शन हॉल के साथ.", m: "2024 और 2026 · मैन्युफैक्चरिंग यूनिट" },
+        { n: "रामकृष्ण एल्युमिनियम", d: "एल्युमिनियम मैन्युफैक्चरिंग प्लांट — मशीनरी और कॉइल हैंडलिंग के लिए हेवी-ड्यूटी फ़्लोरिंग, और गर्मी, भार तथा चौबीसों घंटे काम के लिए बना स्ट्रक्चर.", m: "2022 · मैन्युफैक्चरिंग प्लांट" },
+        { n: "SSP विला", d: "हरियाली के बीच निजी फार्म हाउस — बड़े लिविंग एरिया, खुले बरामदे और शहर से दूर वीकेंड के लिए लैंडस्केप किया गया परिसर.", m: "2020 · फार्म हाउस" },
+        { n: "करमाला फार्म हाउस", d: "ग्रामीण माहौल में फार्म हाउस — मज़बूत निर्माण के साथ खुली, हवादार रहने की जगह और पारिवारिक मेलजोल के लिए आउटडोर क्षेत्र.", m: "2016 · फार्म हाउस" },
       ],
     },
     contact: {
