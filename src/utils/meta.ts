@@ -55,8 +55,6 @@ const REAL_WORK = {
   resort4: '/images/work/ff_resort_site_4.jpg',
   resort5: '/images/work/ff_resort_site_5.jpg',
   resort6: '/images/work/ff_resort_site_6.jpg',
-  sspVilla1: '/images/work/ssp_vill_1.jpg',
-  sspVilla2: '/images/work/ssp_vill_2.jpg',
 } as const;
 
 /**
@@ -79,13 +77,6 @@ export const PROJECT_META: ProjectMeta[] = [
   { cat: 'commercial',  Art: ArtRetail,     photos: [REAL_WORK.jewelsUnit], source: 'real' },
   { cat: 'commercial',  Art: ArtRetail,     photos: [REAL_WORK.school1, REAL_WORK.school2, REAL_WORK.school3], source: 'real' },
   { cat: 'commercial',  Art: ArtRetail,     photos: [REAL_WORK.resort1, REAL_WORK.resort2, REAL_WORK.resort3, REAL_WORK.resort4, REAL_WORK.resort5, REAL_WORK.resort6], source: 'real' },
-  // SSP Shivshakti Poly Films and Ramkrishna Aluminium — real projects, no site
-  // photos yet, so they keep the shed illustration until photos arrive
-  { cat: 'industrial',  Art: ArtShed,       photos: null, source: 'real' },
-  { cat: 'industrial',  Art: ArtShed,       photos: null, source: 'real' },
-  { cat: 'residential', Art: ArtBungalows,  photos: [REAL_WORK.sspVilla1, REAL_WORK.sspVilla2], source: 'real' },
-  // TODO: Karmala Farm House is borrowing a placeholder photo — swap in a real one
-  { cat: 'residential', Art: ArtBungalows,  photos: [STATIC_WORK.homeDone], source: 'real' },
 ];
 
 export const FILTER_KEYS: FilterKey[] = [
